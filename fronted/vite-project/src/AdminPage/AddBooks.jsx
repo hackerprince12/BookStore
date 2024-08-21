@@ -24,7 +24,7 @@ const AddBooks = () => {
     onSubmit:  (values,action) => {
       console.log(values);
       try {
-        const users=  axios.post("http://localhost:3001/api/create",values)
+        const users=  axios.post("https://bookstore-backend-lnsm.onrender.com/api/create",values)
       } catch (error) {
         console.log("post data error:",error);
       }
