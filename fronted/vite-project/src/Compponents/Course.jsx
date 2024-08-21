@@ -10,7 +10,7 @@ const Course = () => {
   const [dataa, setdata] = useState('');
 
   const user = async ()=>{
-    const datas= await axios.get("http://localhost:3001/api/get")
+    const datas= await axios.get("https://bookstore-backend-lnsm.onrender.com/api/get")
     .then((res)=>{
       // console.log(res.data);
        setdata(res.data);
