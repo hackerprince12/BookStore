@@ -23,7 +23,7 @@ const Signup = () => {
       onSubmit:  (values,action) => {
         // console.log(values);
         try {
-          const users=  axios.post("http://localhost:3001/api/signup",values)
+          const users=  axios.post("https://bookstore-backend-lnsm.onrender.com/api/signup",values)
           .then(res=>{
             if(res.data){
               console.log("res:",res.data.message);
